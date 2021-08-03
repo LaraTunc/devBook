@@ -34,10 +34,10 @@ const App = () => {
 	return (
 		<Provider store={store}>
 			<BrowserRouter>
-				<Fragment>
+				<>
 					<Navbar />
 					<Route exact path="/" component={Landing} />
-					<section className="container">
+					<section className="container" style={{ border: '1px solid red' }}>
 						<Alert />
 						<Switch>
 							<Route exact path="/register" component={Register} />
@@ -67,7 +67,7 @@ const App = () => {
 							/>
 						</Switch>
 					</section>
-				</Fragment>
+				</>
 			</BrowserRouter>
 		</Provider>
 	);
