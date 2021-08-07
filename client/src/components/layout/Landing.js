@@ -10,21 +10,17 @@ const Landing = ({ isAuthenticated }) => {
 
 	return (
 		<section className="landing">
-			<div className="dark-overlay">
-				<div className="landing-inner">
-					<h1 className="x-large">Developer Connector</h1>
-					<p className="lead">
-						Create a developer profile/portfolio, share posts and get help from
-						other developers
-					</p>
-					<div className="buttons">
-						<Link to="/register" className="btn btn-primary">
-							Sign Up
-						</Link>
-						<Link to="/login" className="btn btn-light">
-							Login
-						</Link>
-					</div>
+			<div className="landing-inner">
+				<img className="landing-pic" src="../../.././icon.jpg" alt="computer" />
+				<h1 className="x-large">DevBook</h1>
+				<p className="lead">Meeting point for developers</p>
+				<div className="buttons">
+					<Link to="/register" className="btn btn-primary">
+						Sign Up
+					</Link>
+					<Link to="/login" className="btn btn-light">
+						Login
+					</Link>
 				</div>
 			</div>
 		</section>

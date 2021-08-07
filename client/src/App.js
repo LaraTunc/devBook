@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Landing from './components/layout/Landing';
 import Navbar from './components/layout/Navbar';
@@ -38,10 +38,10 @@ const App = () => {
 			<BrowserRouter>
 				<>
 					<Navbar />
-					<Route exact path="/" component={Landing} />
-					<section className="container" style={{ border: '1px solid red' }}>
-						<Alert />
-						<Switch>
+					<Switch>
+						<Route exact path="/" component={Landing} />
+						<section className="container">
+							<Alert />
 							<Route exact path="/register" component={Register} />
 							<Route exact path="/login" component={Login} />
 							<Route exact path="/profiles" component={Profiles} />
@@ -67,15 +67,10 @@ const App = () => {
 								path="/add-education"
 								component={AddEducation}
 							/>
-							<PrivateRoute
-								exact
-								path="/add-education"
-								component={AddEducation}
-							/>
 							<PrivateRoute exact path="/posts" component={Posts} />
 							<PrivateRoute exact path="/posts/:id" component={Post} />
-						</Switch>
-					</section>
+						</section>
+					</Switch>
 				</>
 			</BrowserRouter>
 		</Provider>

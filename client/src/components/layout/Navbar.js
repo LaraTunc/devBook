@@ -48,7 +48,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 					<i className="fas fa-code">
 						<BiCodeAlt />
 					</i>{' '}
-					DevConnector
+					DevBook
 				</Link>
 			</h1>
 			{!loading && <>{isAuthenticated ? authLinks : guestLinks}</>}
