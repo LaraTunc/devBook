@@ -1,7 +1,7 @@
 # devBook 
 
 This project is inspired by Facebook.
-It's a platform to connect developers 👩‍💻 \
+It's a platform to connect developers 👩‍💻 
 
 https://devbook123.herokuapp.com/
 
