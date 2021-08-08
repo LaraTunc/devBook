@@ -1,0 +1,6 @@
+{
+	"mongoURI": "mongodb+srv://lara123:lara321@devconnectors.oxqwj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+	"jwtSecret": "mysecrettoken",
+	"githubClientId": "33011682fdec106dd46e",
+	"githubSecret": "295665dceef9411a1dafabf7ffa47e77f4ef61cb"
+}

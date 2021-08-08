@@ -1,29 +1,30 @@
 {
-  "name": "devconnectors",
-  "version": "1.0.0",
-  "description": "connector app for devs",
-  "main": "server.js",
-  "author": "Lara Tunc <laratunc@gmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "start": "node server",
-    "server": "nodemon server",
-    "client": "cd client && yarn start",
-    "dev" : "concurrently \"yarn server\" \"yarn client\""
-  },
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "concurrently": "^6.1.0",
-    "config": "^3.3.6",
-    "create-react-app": "^4.0.3",
-    "express": "^4.17.1",
-    "express-validator": "^6.11.1",
-    "gravatar": "^1.8.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.12.10",
-    "request": "^2.88.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
-  }
+	"name": "devconnectors",
+	"version": "1.0.0",
+	"description": "connector app for devs",
+	"main": "server.js",
+	"author": "Lara Tunc <laratunc@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"start": "node server",
+		"server": "nodemon server",
+		"client": "cd client && yarn start",
+		"dev": "concurrently \"yarn server\" \"yarn client\"",
+		"heroku-postbuild": "YARN_PRODUCTION=false yarn --cwd client install && yarn build --cwd client build"
+	},
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"concurrently": "^6.1.0",
+		"config": "^3.3.6",
+		"create-react-app": "^4.0.3",
+		"express": "^4.17.1",
+		"express-validator": "^6.11.1",
+		"gravatar": "^1.8.1",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.12.10",
+		"request": "^2.88.2"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.7"
+	}
 }
